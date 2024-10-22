@@ -1,0 +1,131 @@
+
+/* Reset básico para margens e padding */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000000;
+  color: #eaeaea;
+}
+
+/* Estilo do cabeçalho e sua interface */
+.interface {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(111, 54, 163);
+  margin: 10px 50px 20px;
+  justify-content: space-between;
+  background-color: #000000;
+ 
+}
+
+/* Estilo para o menu de navegação */
+.menu-desktop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-150%);
+  
+}
+
+.menu-desktop ul {
+  display: flex;
+}
+
+.menu-desktop li {
+  margin: 0 30px;
+}
+
+.menu-desktop a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.menu-desktop a:hover {
+  color: #6a2f7e; /* Cor ao passar o mouse */
+}
+
+/* Estilo para os ícones de redes sociais */
+.social-icons {
+  display: flex;
+  align-self: center;
+  transform: translateX(90%);
+}
+
+.social-icons a {
+  margin-right: 30px;
+  color: #ffffff;
+  font-size: 2rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #6a2f7e  /* Cor ao passar o mouse */
+}
+
+/***************************/
+/* conteudo principal da minha pagina, primeiro box welcome my protfolio*/
+.title-welcome {
+  border: 3px solid #6a2f7e;  /* Define a borda da caixa */
+  padding: 1px;           /* Espaço interno da caixa */
+  margin: 300px;            /* Espaço externo da caixa */
+  border-radius: 10px;     /* Borda arredondada (opcional) */
+  background-color: #000000; /* Cor de fundo (opcional) */
+  width: 250px;                /* Defina uma largura específica (opcional) */
+  height: auto;                /* Altura automática (ou defina um valor fixo se necessário) */
+  text-align: center;          /* Centraliza o texto horizontalmente */
+}
+
+.titulo-welcome {
+  text-align: center; /* Centraliza o texto (opcional) */
+}
+
+.titulo {
+  color: #ffffff;        /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+}
+
+.titulo span {
+  color:#6a2f7e;  ;     /* Cor do texto dentro da span */
+  font-weight: bold;  /* Negrito para o texto dentro do span */
+}
+
+/* conteudo principal da minha pagina, primeiro box I'm Full Stack Developer. */
+
+.title-hi{
+  width: 300px;                /* Defina uma largura específica (opcional) */
+  height: auto;                /* Altura automática (ou defina um valor fixo se necessário) */
+  text-align: center;          /* Centraliza o texto horizontalmente */
+}
+
+.title-hi {
+  position:relative;
+  left: 42%;
+  transform: translateX(-150%);
+}
+
+.titulo {@a
+  color: #ffffff;        /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte do texto */
+
+}
+
+.titulo span {
+  color:#6a2f7e;  ;     /* Cor do texto dentro da span */
+  font-weight: bold;  /* Negrito para o texto dentro do span */
+}
+
+
+
+
+
+
+
