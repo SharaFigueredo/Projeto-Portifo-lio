@@ -10,26 +10,29 @@ body, ul, li {
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #000000;
-  color: #eaeaea;
+  color: #ffffff;
 }
+
 
 /* Estilo do cabeçalho e sua interface */
 .interface {
-  border-width: 2px;
+  border-width: 70px;
   border-style: solid;
-  border-color: rgb(111, 54, 163);
+  border-color: rgb(0, 0, 0);
   margin: 10px 50px 20px;
   justify-content: space-between;
   background-color: #000000;
- 
+}
+.title span {
+  color:#6a2f7e;  ;     /* Cor do texto dentro da span */
+  font-weight: bold;  /* Negrito para o texto dentro do span */
 }
 
 /* Estilo para o menu de navegação */
 .menu-desktop {
   position: absolute;
-  left: 50%;
+  left: 60%;
   transform: translateX(-150%);
-  
 }
 
 .menu-desktop ul {
@@ -74,9 +77,9 @@ body {
 /***************************/
 /* conteudo principal da minha pagina, primeiro box welcome my protfolio*/
 .title-welcome {
-  border: 3px solid #6a2f7e;  /* Define a borda da caixa */
+  border: 2px solid #6a2f7e;  /* Define a borda da caixa */
   padding: 1px;           /* Espaço interno da caixa */
-  margin: 300px;            /* Espaço externo da caixa */
+  margin: 100px;            /* Espaço externo da caixa */
   border-radius: 10px;     /* Borda arredondada (opcional) */
   background-color: #000000; /* Cor de fundo (opcional) */
   width: 250px;                /* Defina uma largura específica (opcional) */
@@ -84,48 +87,150 @@ body {
   text-align: center;          /* Centraliza o texto horizontalmente */
 }
 
-.titulo-welcome {
-  text-align: center; /* Centraliza o texto (opcional) */
-}
-
-.titulo {
-  color: #ffffff;        /* Cor do texto */
-  font-family: Arial, sans-serif; /* Fonte do texto */
-}
-
-.titulo span {
-  color:#6a2f7e;  ;     /* Cor do texto dentro da span */
-  font-weight: bold;  /* Negrito para o texto dentro do span */
-}
-
-/* conteudo principal da minha pagina, primeiro box I'm Full Stack Developer. */
-
-.title-hi{
-  width: 300px;                /* Defina uma largura específica (opcional) */
-  height: auto;                /* Altura automática (ou defina um valor fixo se necessário) */
-  text-align: center;          /* Centraliza o texto horizontalmente */
-}
+/************* Efeito do hi i`m full stack*/
 
 .title-hi {
-  position:relative;
-  left: 42%;
-  transform: translateX(-150%);
-}
-
-.titulo {@a
-  color: #ffffff;        /* Cor do texto */
-  font-family: Arial, sans-serif; /* Fonte do texto */
+  display: grid;
+  place-items: center;
+  margin-top: -30px; /* Use valor negativo para subir */
 
 }
 
-.titulo span {
-  color:#6a2f7e;  ;     /* Cor do texto dentro da span */
-  font-weight: bold;  /* Negrito para o texto dentro do span */
+.title2{
+  width: 30ch;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+  position: absolute;
+  left: 10%;
+  
+}
+.title2 span{
+  color:#6a2f7e;
 }
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
+/********* edição do texto my creations*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
+li {
+  margin: 0 4px;
+}
 
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
 
+.name div {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+              4px 4px 6px rgba(0, 0, 0, 0.2),
+              inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+              inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
 
+input[type="checkbox"]:checked + div {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+              inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.name ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0 4px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.name div {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+              4px 4px 6px rgba(0, 0, 0, 0.2),
+              inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+              inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"]:checked + div {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+              inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: #6a2f7e;
+  text-shadow: 0 0 15px #6a2f7e, 0 0 25px #6a2f7e;
+}
+.name {
+  
+  margin-left: 50%;
+  top: 10px; /* Move o conteúdo 20 pixels para cima */
+ 
+}
